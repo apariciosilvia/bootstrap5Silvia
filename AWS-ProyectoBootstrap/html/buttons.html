@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BS5 BUTTONS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/encabezado.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/fuentes.css">
+  <link rel="icon" href="../img/icono-silvia.ico" type="image/x-icon">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #contenedor {
+      margin-top: 50px;
+    }
+
+    .info-section {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #e6eaee;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .explanation-box {
+      background-color: #f1f1f1;
+      padding: 15px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .explanation-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .explanation-content {
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- Header -->
+    <header>
+      <div class="custom-header">
+        <h1 class="fuente-paginas-titulo">TUTORIAL BS5 BUTTONS</h1>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../img/icono-casa.png" alt="icono-casa"
+              class="icono"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <label class="hamburger">
+              <input type="checkbox">
+              <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom"
+                  d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                </path>
+                <path class="line" d="M7 16 27 16"></path>
+              </svg>
+            </label> </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <!-- Dropdown Básicos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Básicos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="tables.html">BS5 Tables</a></li>
+                  <li><a class="dropdown-item" href="dropdowns.html">BS5 Dropdowns</a></li>
+                  <li><a class="dropdown-item" href="forms.html">BS5 Forms</a></li>
+                  <li><a class="dropdown-item" href="flex.html">BS5 Flex</a></li>
+                  <li><a class="dropdown-item" href="navs.html">BS5 Navs</a></li>
+                  <li><a class="dropdown-item" href="inputGroups.html">BS5 Input Groups</a></li>
+                  <li><a class="dropdown-item" href="jumbotron.html">BS5 Jumbotron</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Botones y Grupos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Botones y Grupos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="badges.html">BS5 Badges</a></li>
+                  <li><a class="dropdown-item" href="buttons.html">BS5 Buttons</a></li>
+                  <li><a class="dropdown-item" href="selectMenus.html">BS5 Select Menus</a></li>
+                  <li><a class="dropdown-item" href="buttonsGroups.html">BS5 Buttons Groups</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Componentes -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Componentes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                  <li><a class="dropdown-item" href="tooltip.html">BS5 Tooltip</a></li>
+                  <li><a class="dropdown-item" href="carousel.html">BS5 Carousel</a></li>
+                  <li><a class="dropdown-item" href="offcanvas.html">BSS OffCanvas</a></li>
+                  <li><a class="dropdown-item" href="progressBars.html">BS5 Progress Bar</a></li>
+                  <li><a class="dropdown-item" href="range.html">BS5 Range</a></li>
+                  <li><a class="dropdown-item" href="images.html">BS5 Images</a></li>
+                  <li><a class="dropdown-item" href="cards.html">BS5 Cards</a></li>
+                  <li><a class="dropdown-item" href="collapse.html">BS5 Collapse</a></li>
+                  <li><a class="dropdown-item" href="toast.html">BS5 Toast</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Estructura -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Estructura
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                  <li><a class="dropdown-item" href="navbar.html">BS5 Nav Bar</a></li>
+                  <li><a class="dropdown-item" href="modal.html">BS5 Modal</a></li>
+                  <li><a class="dropdown-item" href="scrollspy.html">BS5 ScrolSpy</a></li>
+                  <li><a class="dropdown-item" href="listGroups.html">BS5 List Groups</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Avanzados -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Avanzados
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                  <li><a class="dropdown-item" href="darkMode.html">BS5 DarkMode</a></li>
+                  <li><a class="dropdown-item" href="spinners.html">BS5 Spinners</a></li>
+                  <li><a class="dropdown-item" href="alerts.html">BS5 Alerts</a></li>
+                  <li><a class="dropdown-item" href="popover.html">BS5 Popover</a></li>
+                  <li><a class="dropdown-item" href="floatingLabels.html">BS5 Floating Labels</a></li>
+                  <li><a class="dropdown-item" href="checksRadios.html">BS5 Checks and Radios</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Utilidades -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Utilidades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                  <li><a class="dropdown-item" href="utilities.html">BSS Utilities</a></li>
+                  <li><a class="dropdown-item" href="formValidation.html">BS5 Form Validation</a></li>
+                  <li><a class="dropdown-item" href="pagination.html">BS5 Pagination</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <div class="container" id="contenedor">
+    <!-- Botones Básicos -->
+    <h2 class="text-secondary mb-4">Botones Básicos</h2>
+    <button type="button" class="btn btn-primary">Botón Primario</button>
+    <button type="button" class="btn btn-secondary">Botón Secundario</button>
+    <button type="button" class="btn btn-success">Botón de Éxito</button>
+    <button type="button" class="btn btn-danger">Botón de Peligro</button>
+    <button type="button" class="btn btn-warning">Botón de Advertencia</button>
+    <button type="button" class="btn btn-info">Botón de Información</button>
+    <button type="button" class="btn btn-light">Botón Claro</button>
+    <button type="button" class="btn btn-dark">Botón Oscuro</button>
+
+    <!-- Explicación: Botones básicos -->
+    <div class="explanation-box">
+      <div class="explanation-title">¿Qué son los botones básicos?</div>
+      <div class="explanation-content">
+        Los botones básicos de Bootstrap tienen diferentes colores para representar diferentes estados o
+        acciones. Puedes elegir entre varias clases como <code>.btn-primary</code>, <code>.btn-secondary</code>,
+        <code>.btn-success</code>, etc., para mostrar diferentes tipos de botones con distintos colores y
+        significados.
+      </div>
+    </div>
+
+    <!-- Botones con iconos -->
+    <h2 class="text-secondary mt-5 mb-4">Botones con Iconos</h2>
+    <button type="button" class="btn btn-success">
+      <i class="bi bi-check-circle"></i> Aceptar
+    </button>
+    <button type="button" class="btn btn-danger">
+      <i class="bi bi-x-circle"></i> Cancelar
+    </button>
+    <button type="button" class="btn btn-info">
+      <i class="bi bi-info-circle"></i> Información
+    </button>
+    <button type="button" class="btn btn-warning">
+      <i class="bi bi-exclamation-circle"></i> Advertencia
+    </button>
+
+    <!-- Explicación: Botones con iconos -->
+    <div class="explanation-box">
+      <div class="explanation-title">¿Qué son los botones con iconos?</div>
+      <div class="explanation-content">
+        Los botones con iconos permiten incluir símbolos visuales para mejorar la experiencia del usuario.
+        Puedes agregar iconos dentro de los botones utilizando las clases de iconos de Bootstrap, como
+        <code>bi-check-circle</code>, <code>bi-x-circle</code>, etc. Estos iconos ayudan a transmitir la acción
+        del botón de manera más clara.
+      </div>
+    </div>
+
+    <!-- Botones con tamaño -->
+    <h2 class="text-secondary mt-5 mb-4">Botones con Tamaños</h2>
+    <button type="button" class="btn btn-primary btn-lg">Silvia</button>
+    <button type="button" class="btn btn-primary">Aparicio</button>
+    <button type="button" class="btn btn-primary btn-sm">Martín</button>
+
+    <!-- Explicación: Botones con tamaños -->
+    <div class="explanation-box">
+      <div class="explanation-title">¿Qué son los botones con tamaños?</div>
+      <div class="explanation-content">
+        Bootstrap 5 ofrece opciones para personalizar el tamaño de los botones. Puedes usar las clases
+        <code>.btn-lg</code> para botones grandes, <code>.btn-sm</code> para botones pequeños, y sin clase para
+        el tamaño normal. Estas opciones permiten una mejor adaptación de los botones al diseño de tu página.
+      </div>
+    </div>
+
+    <!-- Botones Desactivados -->
+    <h2 class="text-secondary mt-5 mb-4">Botones Desactivados</h2>
+    <button type="button" class="btn btn-primary" disabled>Botón Desactivado</button>
+
+    <!-- Explicación: Botones desactivados -->
+    <div class="explanation-box">
+      <div class="explanation-title">¿Qué son los botones desactivados?</div>
+      <div class="explanation-content">
+        Los botones desactivados no pueden ser interactuados por el usuario. Se logran utilizando el atributo
+        <code>disabled</code>, que evita cualquier acción sobre el botón. Son útiles cuando quieres indicar que
+        una acción no está disponible en ese momento.
+      </div>
+    </div>
+
+    <!-- Botones de enlace -->
+    <h2 class="text-secondary mt-5 mb-4">Botones como Enlaces</h2>
+    <a href="#" class="btn btn-link">Botón Enlace</a>
+
+    <!-- Explicación: Botones de enlace -->
+    <div class="explanation-box">
+      <div class="explanation-title">¿Qué son los botones de enlace?</div>
+      <div class="explanation-content">
+        Los botones de enlace no son botones tradicionales, sino que funcionan como enlaces con estilo de botón.
+        Se logran con la clase <code>.btn-link</code>, lo que permite que el botón se vea como un enlace, pero
+        con el estilo de los botones de Bootstrap.
+      </div>
+    </div>
+
+    <!-- Botones con clases adicionales -->
+    <h2 class="text-secondary mt-5 mb-4">Botones con Clases Adicionales</h2>
+    <button type="button" class="btn btn-outline-primary">Botón de contorno</button>
+    <button type="button" class="btn btn-outline-danger">Botón de contorno</button>
+
+    <!-- Explicación: Botones con clases adicionales -->
+    <div class="explanation-box">
+      <div class="explanation-title">¿Qué son los botones con clases adicionales?</div>
+      <div class="explanation-content">
+        Los botones con clases adicionales como <code>.btn-outline-primary</code> o
+        <code>.btn-outline-danger</code> ofrecen una versión con borde del botón, en lugar de un fondo relleno.
+        Esto le da un aspecto más sutil, y puedes usarlo cuando no quieras que el botón se destaque tanto como
+        los botones tradicionales.
+      </div>
+    </div>
+    <br>
+    <h3>OBJETIVO DEL ELEMENTO:</h3>
+    <p>El objetivo de <b>Buttons</b> en <b>Bootstrap 5</b> es proporcionar <b>botones estilizados y personalizables</b> para interactuar con el usuario. Permiten aplicar colores, tamaños, efectos y variantes como <b>outline, disabled o block</b>, mejorando la experiencia de uso en formularios y acciones interactivas.</p>
+  </div>
+
+  <!-- Pie de Página -->
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <img src="../img/icono-silvia.png" alt="icono-silvia" class="rounded-circle"
+        style="width: 40px; height: 40px; object-fit: cover;">
+
+      <div class="text-center">
+        <p class="mb-0">© 2024 <strong>Silvia Aparicio Martín</strong>. Esta obra está bajo una
+          <a href="https://creativecommons.org/licenses/by/4.0/" class="text-white" target="_blank">licencia de Creative
+            Commons Atribución 4.0 Internacional</a>.
+        </p>
+      </div>
+
+      <div class="text-end">
+        <a href="../index.html" class="text-white text-decoration-none">BS5</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

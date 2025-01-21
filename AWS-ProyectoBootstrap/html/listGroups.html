@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BS5 LIST GROUPS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/encabezado.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/fuentes.css">
+  <link rel="icon" href="../img/icono-silvia.ico" type="image/x-icon">
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: 'Arial', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- Header -->
+    <header>
+      <div class="custom-header">
+        <h1 class="fuente-paginas-titulo">TUTORIAL BS5 LIST GROUPS</h1>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../img/icono-casa.png" alt="icono-casa"
+              class="icono"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <label class="hamburger">
+              <input type="checkbox">
+              <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom"
+                  d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                </path>
+                <path class="line" d="M7 16 27 16"></path>
+              </svg>
+            </label> </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <!-- Dropdown Básicos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Básicos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="tables.html">BS5 Tables</a></li>
+                  <li><a class="dropdown-item" href="dropdowns.html">BS5 Dropdowns</a></li>
+                  <li><a class="dropdown-item" href="forms.html">BS5 Forms</a></li>
+                  <li><a class="dropdown-item" href="flex.html">BS5 Flex</a></li>
+                  <li><a class="dropdown-item" href="navs.html">BS5 Navs</a></li>
+                  <li><a class="dropdown-item" href="inputGroups.html">BS5 Input Groups</a></li>
+                  <li><a class="dropdown-item" href="jumbotron.html">BS5 Jumbotron</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Botones y Grupos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Botones y Grupos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="badges.html">BS5 Badges</a></li>
+                  <li><a class="dropdown-item" href="buttons.html">BS5 Buttons</a></li>
+                  <li><a class="dropdown-item" href="selectMenus.html">BS5 Select Menus</a></li>
+                  <li><a class="dropdown-item" href="buttonsGroups.html">BS5 Buttons Groups</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Componentes -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Componentes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                  <li><a class="dropdown-item" href="tooltip.html">BS5 Tooltip</a></li>
+                  <li><a class="dropdown-item" href="carousel.html">BS5 Carousel</a></li>
+                  <li><a class="dropdown-item" href="offcanvas.html">BSS OffCanvas</a></li>
+                  <li><a class="dropdown-item" href="progressBars.html">BS5 Progress Bar</a></li>
+                  <li><a class="dropdown-item" href="range.html">BS5 Range</a></li>
+                  <li><a class="dropdown-item" href="images.html">BS5 Images</a></li>
+                  <li><a class="dropdown-item" href="cards.html">BS5 Cards</a></li>
+                  <li><a class="dropdown-item" href="collapse.html">BS5 Collapse</a></li>
+                  <li><a class="dropdown-item" href="toast.html">BS5 Toast</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Estructura -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Estructura
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                  <li><a class="dropdown-item" href="navbar.html">BS5 Nav Bar</a></li>
+                  <li><a class="dropdown-item" href="modal.html">BS5 Modal</a></li>
+                  <li><a class="dropdown-item" href="scrollspy.html">BS5 ScrolSpy</a></li>
+                  <li><a class="dropdown-item" href="listGroups.html">BS5 List Groups</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Avanzados -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Avanzados
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                  <li><a class="dropdown-item" href="darkMode.html">BS5 DarkMode</a></li>
+                  <li><a class="dropdown-item" href="spinners.html">BS5 Spinners</a></li>
+                  <li><a class="dropdown-item" href="alerts.html">BS5 Alerts</a></li>
+                  <li><a class="dropdown-item" href="popover.html">BS5 Popover</a></li>
+                  <li><a class="dropdown-item" href="floatingLabels.html">BS5 Floating Labels</a></li>
+                  <li><a class="dropdown-item" href="checksRadios.html">BS5 Checks and Radios</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Utilidades -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Utilidades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                  <li><a class="dropdown-item" href="utilities.html">BSS Utilities</a></li>
+                  <li><a class="dropdown-item" href="formValidation.html">BS5 Form Validation</a></li>
+                  <li><a class="dropdown-item" href="pagination.html">BS5 Pagination</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <div class="container" id="contenedor">
+    <!-- List Groups Section -->
+    <h2 class="text-secondary mt-5 mb-4">List Groups en Bootstrap 5</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Lista Básica</h4>
+        <ul class="list-group">
+          <li class="list-group-item">Elemento 1</li>
+          <li class="list-group-item">Elemento 2</li>
+          <li class="list-group-item">Elemento 3</li>
+        </ul>
+      </div>
+  
+      <div class="col-md-6">
+        <h4>Lista con enlaces</h4>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Elemento Activo</a>
+          <a href="#" class="list-group-item list-group-item-action">Elemento Enlace 1</a>
+          <a href="#" class="list-group-item list-group-item-action">Elemento Enlace 2</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h4>Lista con colores</h4>
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-primary">Elemento Primario</li>
+          <li class="list-group-item list-group-item-success">Elemento Éxito</li>
+          <li class="list-group-item list-group-item-danger">Elemento Peligro</li>
+        </ul>
+      </div>
+  
+      <div class="col-md-6">
+        <h4>Lista con badges</h4>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Elemento con Badge
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Otro Elemento
+            <span class="badge bg-success rounded-pill">7</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Último Elemento
+            <span class="badge bg-danger rounded-pill">3</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Explicación: List Groups -->
+    <div class="explanation-box mt-4">
+      <div class="explanation-title">¿Qué son los List Groups?</div>
+      <div class="explanation-content">
+        Los <code>List Groups</code> en Bootstrap 5 son un componente flexible y potente para mostrar una serie de elementos, 
+        ya sea texto, enlaces o botones, de forma estructurada y visualmente atractiva. 
+        Se pueden personalizar utilizando colores, badges, y acciones como enlaces o botones.
+        <ul>
+          <li><strong>Listas básicas:</strong> Para mostrar contenido simple en forma de lista.</li>
+          <li><strong>Listas con enlaces:</strong> Elementos interactivos que redirigen a otros lugares.</li>
+          <li><strong>Listas con colores:</strong> Para diferenciar visualmente elementos mediante clases de colores.</li>
+          <li><strong>Listas con badges:</strong> Muestran información adicional, como notificaciones o contadores.</li>
+        </ul>
+      </div>
+    </div>
+    <br><br>
+    <h3>OBJETIVO DEL ELEMENTO:</h3>
+    <p>El objetivo de <b>List Groups</b> en <b>Bootstrap 5</b> es proporcionar <b>listas estilizadas y flexibles</b> para mostrar elementos de manera ordenada. Se usan en <b>menús, listas de tareas, comentarios o notificaciones</b>, con soporte para enlaces, botones y elementos activos.</p>
+  </div>
+  
+  <!-- Pie de Página -->
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <img src="../img/icono-silvia.png" alt="icono-silvia" class="rounded-circle"
+        style="width: 40px; height: 40px; object-fit: cover;">
+
+      <div class="text-center">
+        <p class="mb-0">© 2024 <strong>Silvia Aparicio Martín</strong>. Esta obra está bajo una
+          <a href="https://creativecommons.org/licenses/by/4.0/" class="text-white" target="_blank">licencia de Creative
+            Commons Atribución 4.0 Internacional</a>.
+        </p>
+      </div>
+
+      <div class="text-end">
+        <a href="../index.html" class="text-white text-decoration-none">BS5</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

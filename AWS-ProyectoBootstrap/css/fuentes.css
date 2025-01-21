@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url('../fonts/BebasNeue-Regular.ttf');
+}
+
+.fuente-paginas-titulo {
+    font-family: 'BebasNeue-Regular';
+}
+
+@font-face {
+    font-family: 'Designer';
+    src: url('../fonts/Designer.otf');
+}
+
+.fuente-index-titulo{
+    font-family: 'Designer';
+}

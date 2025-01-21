@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BS5 SELECT MENUS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/encabezado.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/fuentes.css">
+  <link rel="icon" href="../img/icono-silvia.ico" type="image/x-icon">
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .select-container {
+      width: 650px;
+      margin-top: 10px;
+    }
+
+
+    select {
+      appearance: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      border: 2px solid #ccc;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Clases de color para cada opción */
+    .option-red {
+      background-color: #FF4C4C;
+      color: white;
+    }
+
+    .option-green {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .option-blue {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .option-yellow {
+      background-color: #FFD700;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- Header -->
+    <header>
+      <div class="custom-header">
+        <h1 class="fuente-paginas-titulo">TUTORIAL BS5 SELECT MENUS</h1>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../img/icono-casa.png" alt="icono-casa"
+              class="icono"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <label class="hamburger">
+              <input type="checkbox">
+              <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom"
+                  d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                </path>
+                <path class="line" d="M7 16 27 16"></path>
+              </svg>
+            </label> </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <!-- Dropdown Básicos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Básicos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="tables.html">BS5 Tables</a></li>
+                  <li><a class="dropdown-item" href="dropdowns.html">BS5 Dropdowns</a></li>
+                  <li><a class="dropdown-item" href="forms.html">BS5 Forms</a></li>
+                  <li><a class="dropdown-item" href="flex.html">BS5 Flex</a></li>
+                  <li><a class="dropdown-item" href="navs.html">BS5 Navs</a></li>
+                  <li><a class="dropdown-item" href="inputGroups.html">BS5 Input Groups</a></li>
+                  <li><a class="dropdown-item" href="jumbotron.html">BS5 Jumbotron</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Botones y Grupos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Botones y Grupos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="badges.html">BS5 Badges</a></li>
+                  <li><a class="dropdown-item" href="buttons.html">BS5 Buttons</a></li>
+                  <li><a class="dropdown-item" href="selectMenus.html">BS5 Select Menus</a></li>
+                  <li><a class="dropdown-item" href="buttonsGroups.html">BS5 Buttons Groups</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Componentes -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Componentes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                  <li><a class="dropdown-item" href="tooltip.html">BS5 Tooltip</a></li>
+                  <li><a class="dropdown-item" href="carousel.html">BS5 Carousel</a></li>
+                  <li><a class="dropdown-item" href="offcanvas.html">BSS OffCanvas</a></li>
+                  <li><a class="dropdown-item" href="progressBars.html">BS5 Progress Bar</a></li>
+                  <li><a class="dropdown-item" href="range.html">BS5 Range</a></li>
+                  <li><a class="dropdown-item" href="images.html">BS5 Images</a></li>
+                  <li><a class="dropdown-item" href="cards.html">BS5 Cards</a></li>
+                  <li><a class="dropdown-item" href="collapse.html">BS5 Collapse</a></li>
+                  <li><a class="dropdown-item" href="toast.html">BS5 Toast</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Estructura -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Estructura
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                  <li><a class="dropdown-item" href="navbar.html">BS5 Nav Bar</a></li>
+                  <li><a class="dropdown-item" href="modal.html">BS5 Modal</a></li>
+                  <li><a class="dropdown-item" href="scrollspy.html">BS5 ScrolSpy</a></li>
+                  <li><a class="dropdown-item" href="listGroups.html">BS5 List Groups</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Avanzados -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Avanzados
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                  <li><a class="dropdown-item" href="darkMode.html">BS5 DarkMode</a></li>
+                  <li><a class="dropdown-item" href="spinners.html">BS5 Spinners</a></li>
+                  <li><a class="dropdown-item" href="alerts.html">BS5 Alerts</a></li>
+                  <li><a class="dropdown-item" href="popover.html">BS5 Popover</a></li>
+                  <li><a class="dropdown-item" href="floatingLabels.html">BS5 Floating Labels</a></li>
+                  <li><a class="dropdown-item" href="checksRadios.html">BS5 Checks and Radios</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Utilidades -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Utilidades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                  <li><a class="dropdown-item" href="utilities.html">BSS Utilities</a></li>
+                  <li><a class="dropdown-item" href="formValidation.html">BS5 Form Validation</a></li>
+                  <li><a class="dropdown-item" href="pagination.html">BS5 Pagination</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <div class="container mt-5">
+    <!-- Explicación de Select Menus -->
+    <div class="mb-4">
+      <h4>Descripción de Select Menus en Bootstrap 5</h4>
+      <ul>
+        <li><strong>Definición:</strong>
+          Los Select Menus permiten a los usuarios elegir una o varias opciones de una lista desplegable.
+        </li>
+        <li><strong>Usos:</strong>
+          Son ideales para formularios donde se necesita seleccionar datos predefinidos.
+        </li>
+        <li><strong>Características:</strong>
+          Bootstrap 5 permite personalizar estilos, tamaños y funcionalidades de los Select Menus para una mejor
+          experiencia del usuario.
+        </li>
+        <li><strong>Ventajas:</strong>
+          Soportan opciones múltiples, deshabilitación y estilos consistentes sin necesidad de CSS adicional.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Ejemplo de Select Menus -->
+    <h1 class="text-center">Ejemplos de Select Menus en Bootstrap 5</h1>
+    <div class="row text-center g-4">
+      <!-- Select Básico -->
+      <div class="col-md-6">
+        <h5>Select Básico</h5>
+        <p>Un menú desplegable simple.</p>
+        <select class="form-select" aria-label="Seleccionar una opción">
+          <option selected>Selecciona una opción</option>
+          <option value="1">Opción 1</option>
+          <option value="2">Opción 2</option>
+          <option value="3">Opción 3</option>
+        </select>
+      </div>
+
+      <!-- Select con Tamaños -->
+      <div class="col-md-6">
+        <h5>Select con Tamaños</h5>
+        <p>Elige entre selectores grandes, normales o pequeños.</p>
+        <div class="mb-2">
+          <select class="form-select form-select-lg" aria-label="Selector grande">
+            <option selected>Grande</option>
+            <option value="1">Opción 1</option>
+            <option value="2">Opción 2</option>
+          </select>
+        </div>
+        <div>
+          <select class="form-select form-select-sm" aria-label="Selector pequeño">
+            <option selected>Pequeño</option>
+            <option value="1">Opción 1</option>
+            <option value="2">Opción 2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center g-4 mt-5">
+      <!-- Select Múltiple -->
+      <div class="col-md-6">
+        <h5>Select Múltiple</h5>
+        <p>Permite seleccionar varias opciones a la vez.</p>
+        <select class="form-select" multiple aria-label="Seleccionar múltiples opciones">
+          <option value="1">Silvia</option>
+          <option value="2">Aparicio 2</option>
+          <option value="3">Martín 3</option>
+          <option value="4">ESTUDIANTE DAW</option>
+        </select>
+      </div>
+
+      <!-- Select Deshabilitado -->
+      <div class="col-md-6">
+        <h5>Select Deshabilitado</h5>
+        <p>Un menú desplegable que no se puede interactuar.</p>
+        <select class="form-select" disabled aria-label="Selector deshabilitado">
+          <option selected>No disponible</option>
+          <option value="1">Opción 1</option>
+          <option value="2">Opción 2</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row text-center g-4 mt-5">
+      <!-- Select con Grupos de Opciones -->
+      <div class="col-md-6">
+        <h5>Select con Grupos de Opciones</h5>
+        <p>Organiza las opciones en categorías.</p>
+        <select class="form-select" aria-label="Selector con grupos de opciones">
+          <optgroup label="Grupo 1">
+            <option value="1">Opción 1</option>
+            <option value="2">Opción 2</option>
+          </optgroup>
+          <optgroup label="Grupo 2">
+            <option value="3">Opción 3</option>
+            <option value="4">Opción 4</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <h5>Select Personalizado con Colores</h5>
+        <p>Elige una opción y el fondo del select cambiará según el color de la opción.</p>
+        <div class="select-container">
+          <select id="color-select" class="form-select">
+            <option value="red" class="option-red">Rojo</option>
+            <option value="green" class="option-green">Verde</option>
+            <option value="blue" class="option-blue">Azul</option>
+            <option value="yellow" class="option-yellow">Amarillo</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Información Adicional -->
+    <div class="container mt-5">
+      <div class="info-section mt-5">
+        <h4>¿Cómo Usar Select Menus en Bootstrap 5?</h4>
+        <ol>
+          <li>Incluye Bootstrap 5 en tu proyecto.</li>
+          <li>Utiliza la clase <code>.form-select</code> para estilizar el elemento <code>&lt;select&gt;</code>.</li>
+          <li>Personaliza según tus necesidades con clases adicionales como <code>.form-select-lg</code> o
+            <code>.form-select-sm</code>.
+          </li>
+          <li>Añade funcionalidades avanzadas como múltiples selecciones o grupos de opciones.</li>
+        </ol>
+        <p>Los Select Menus son componentes versátiles que mejoran la experiencia del usuario en formularios y
+          aplicaciones web.</p>
+      </div>
+    </div>
+    <br>
+    <h3>OBJETIVO DEL ELEMENTO:</h3>
+    <p>El objetivo de <b>Select Menus</b> en <b>Bootstrap 5</b> es proporcionar <b>listas desplegables estilizadas y accesibles</b> para que los usuarios seleccionen una opción entre varias. Mejoran la experiencia en formularios al ofrecer un diseño uniforme y compatible con dispositivos móviles.</p>
+  </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const select = document.getElementById("color-select");
+
+      function updateBackground() {
+        const selectedOption = select.options[select.selectedIndex];
+
+        // Aplicar color de fondo y texto al select según la opción elegida
+        select.style.backgroundColor = selectedOption.classList.contains("option-red") ? "#FF4C4C" :
+          selectedOption.classList.contains("option-green") ? "#28a745" :
+            selectedOption.classList.contains("option-blue") ? "#007bff" :
+              selectedOption.classList.contains("option-yellow") ? "#FFD700" : "#fff";
+
+        select.style.color = selectedOption.classList.contains("option-yellow") ? "black" : "white";
+      }
+
+      select.addEventListener("change", updateBackground);
+      updateBackground(); // Aplicar el color inicial
+    });
+  </script>
+
+  <!-- Pie de Página -->
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <img src="../img/icono-silvia.png" alt="icono-silvia" class="rounded-circle"
+        style="width: 40px; height: 40px; object-fit: cover;">
+
+      <div class="text-center">
+        <p class="mb-0">© 2024 <strong>Silvia Aparicio Martín</strong>. Esta obra está bajo una
+          <a href="https://creativecommons.org/licenses/by/4.0/" class="text-white" target="_blank">licencia de Creative
+            Commons Atribución 4.0 Internacional</a>.
+        </p>
+      </div>
+
+      <div class="text-end">
+        <a href="../index.html" class="text-white text-decoration-none">BS5</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

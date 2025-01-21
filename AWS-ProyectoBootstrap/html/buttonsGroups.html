@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BS5 Button Groups</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/encabezado.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/fuentes.css">
+  <link rel="icon" href="../img/icono-silvia.ico" type="image/x-icon">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #contenedor {
+      margin-top: 50px;
+    }
+
+    .info-section {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #e6eaee;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .explanation-box {
+      background-color: #f1f1f1;
+      padding: 15px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .explanation-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .explanation-content {
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- Header -->
+    <header>
+      <div class="custom-header">
+        <h1 class="fuente-paginas-titulo">TUTORIAL BS5 BUTTONS GROUPS</h1>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../img/icono-casa.png" alt="icono-casa"
+              class="icono"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <label class="hamburger">
+              <input type="checkbox">
+              <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom"
+                  d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                </path>
+                <path class="line" d="M7 16 27 16"></path>
+              </svg>
+            </label> </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <!-- Dropdown Básicos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Básicos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="tables.html">BS5 Tables</a></li>
+                  <li><a class="dropdown-item" href="dropdowns.html">BS5 Dropdowns</a></li>
+                  <li><a class="dropdown-item" href="forms.html">BS5 Forms</a></li>
+                  <li><a class="dropdown-item" href="flex.html">BS5 Flex</a></li>
+                  <li><a class="dropdown-item" href="navs.html">BS5 Navs</a></li>
+                  <li><a class="dropdown-item" href="inputGroups.html">BS5 Input Groups</a></li>
+                  <li><a class="dropdown-item" href="jumbotron.html">BS5 Jumbotron</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Botones y Grupos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Botones y Grupos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="badges.html">BS5 Badges</a></li>
+                  <li><a class="dropdown-item" href="buttons.html">BS5 Buttons</a></li>
+                  <li><a class="dropdown-item" href="selectMenus.html">BS5 Select Menus</a></li>
+                  <li><a class="dropdown-item" href="buttonsGroups.html">BS5 Buttons Groups</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Componentes -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Componentes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                  <li><a class="dropdown-item" href="tooltip.html">BS5 Tooltip</a></li>
+                  <li><a class="dropdown-item" href="carousel.html">BS5 Carousel</a></li>
+                  <li><a class="dropdown-item" href="offcanvas.html">BSS OffCanvas</a></li>
+                  <li><a class="dropdown-item" href="progressBars.html">BS5 Progress Bar</a></li>
+                  <li><a class="dropdown-item" href="range.html">BS5 Range</a></li>
+                  <li><a class="dropdown-item" href="images.html">BS5 Images</a></li>
+                  <li><a class="dropdown-item" href="cards.html">BS5 Cards</a></li>
+                  <li><a class="dropdown-item" href="collapse.html">BS5 Collapse</a></li>
+                  <li><a class="dropdown-item" href="toast.html">BS5 Toast</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Estructura -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Estructura
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                  <li><a class="dropdown-item" href="navbar.html">BS5 Nav Bar</a></li>
+                  <li><a class="dropdown-item" href="modal.html">BS5 Modal</a></li>
+                  <li><a class="dropdown-item" href="scrollspy.html">BS5 ScrolSpy</a></li>
+                  <li><a class="dropdown-item" href="listGroups.html">BS5 List Groups</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Avanzados -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Avanzados
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                  <li><a class="dropdown-item" href="darkMode.html">BS5 DarkMode</a></li>
+                  <li><a class="dropdown-item" href="spinners.html">BS5 Spinners</a></li>
+                  <li><a class="dropdown-item" href="alerts.html">BS5 Alerts</a></li>
+                  <li><a class="dropdown-item" href="popover.html">BS5 Popover</a></li>
+                  <li><a class="dropdown-item" href="floatingLabels.html">BS5 Floating Labels</a></li>
+                  <li><a class="dropdown-item" href="checksRadios.html">BS5 Checks and Radios</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Utilidades -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Utilidades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                  <li><a class="dropdown-item" href="utilities.html">BSS Utilities</a></li>
+                  <li><a class="dropdown-item" href="formValidation.html">BS5 Form Validation</a></li>
+                  <li><a class="dropdown-item" href="pagination.html">BS5 Pagination</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <div class="container" id="contenedor">
+    <div class="explanation-box">
+      <div class="explanation-title">¿Qué son los Button Groups?</div>
+      <div class="explanation-content">
+        Los Button Groups son una forma de agrupar botones relacionados visualmente. Puedes usar la clase
+        <code>.btn-group</code> para agrupar botones de forma horizontal, o la clase <code>.btn-group-vertical</code>
+        para alinearlos verticalmente. También puedes agregar funcionalidades adicionales, como menús desplegables, para
+        incluir más opciones dentro de un grupo de botones. Son útiles cuando tienes varias acciones posibles para un
+        mismo contexto.
+      </div>
+    </div>
+
+    <!-- Button Group Básico -->
+    <h2 class="text-secondary mt-5 mb-4">Button Group Básico</h2>
+    <div class="btn-group" role="group" aria-label="Basic button group">
+      <button type="button" class="btn btn-primary">Botón 1</button>
+      <button type="button" class="btn btn-primary">Botón 2</button>
+      <button type="button" class="btn btn-primary">Botón 3</button>
+    </div>
+
+    <!-- Explicación: Button Group Básico -->
+    <div class="explanation-box">
+      <div class="explanation-title">¿Qué es un Button Group Básico?</div>
+      <div class="explanation-content">
+        Un Button Group Básico agrupa varios botones juntos para hacerlos más compactos y visualmente relacionados. Este
+        tipo de agrupación ayuda a mantener los botones organizados y mejora la interfaz de usuario, especialmente
+        cuando tienes varias acciones similares que deben realizarse en una sola línea. Se crea utilizando la clase
+        <code>.btn-group</code>.
+      </div>
+    </div>
+
+    <!-- Button Group Vertical -->
+    <h2 class="text-secondary mt-5 mb-4">Button Group Vertical</h2>
+    <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+      <button type="button" class="btn btn-warning">Silvia</button>
+      <button type="button" class="btn btn-success">Aparicio</button>
+      <button type="button" class="btn btn-info">Martín</button>
+    </div>
+
+    <!-- Explicación: Button Group Vertical -->
+    <div class="explanation-box">
+      <div class="explanation-title">¿Qué es un Button Group Vertical?</div>
+      <div class="explanation-content">
+        Un Button Group Vertical es una variante del Button Group, pero en lugar de organizar los botones
+        horizontalmente, los organiza en una columna. Es útil cuando tienes muchas acciones y quieres que los botones
+        estén alineados verticalmente, lo que es ideal para dispositivos móviles o para interfaces donde el espacio
+        horizontal es limitado. Se utiliza con la clase <code>.btn-group-vertical</code>.
+      </div>
+    </div>
+
+    <!-- Button Group con Dropdown -->
+    <h2 class="text-secondary mt-5 mb-4">Button Group con Dropdown</h2>
+    <div class="btn-group" role="group" aria-label="Button group with dropdown">
+      <button type="button" class="btn btn-info">Acción 1</button>
+      <button type="button" class="btn btn-info">Acción 2</button>
+      <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Opciones <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+      </ul>
+    </div>
+
+    <!-- Explicación: Button Group con Dropdown -->
+    <div class="explanation-box">
+      <div class="explanation-title">¿Qué es un Button Group con Dropdown?</div>
+      <div class="explanation-content">
+        Este tipo de Button Group incluye un botón que despliega un menú de opciones adicionales cuando el usuario hace
+        clic en él. Es útil cuando tienes muchas opciones para ofrecer, pero no deseas que todos los botones se muestren
+        en la interfaz. Para crear este tipo de botón, usamos un botón con la clase <code>.dropdown-toggle</code> y un
+        menú desplegable con la clase <code>.dropdown-menu</code>.
+      </div>
+    </div>
+
+    <!-- Button Group con iconos -->
+    <h2 class="text-secondary mt-5 mb-4">Button Group con Iconos</h2>
+    <div class="btn-group" role="group" aria-label="Button group with icons">
+      <button type="button" class="btn btn-danger"><i class="bi bi-heart-fill"></i> Me gusta</button>
+      <button type="button" class="btn btn-warning"><i class="bi bi-pencil-fill"></i> Editar</button>
+      <button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i> Aceptar</button>
+    </div>
+
+    <!-- Explicación: Button Group con iconos -->
+    <div class="explanation-box">
+      <div class="explanation-title">¿Qué es un Button Group con Iconos?</div>
+      <div class="explanation-content">
+        Los Button Groups con iconos combinan la funcionalidad de los grupos de botones con la visibilidad de los
+        iconos. Esto proporciona una experiencia más visual, lo que ayuda a los usuarios a identificar rápidamente la
+        acción asociada con cada botón. En el ejemplo se utilizaron iconos como <code>bi-heart-fill</code>,
+        <code>bi-pencil-fill</code>, y <code>bi-check-circle</code>.
+      </div>
+    </div>
+    <br> 
+    <h3>OBJETIVO DEL ELEMENTO:</h3>
+    <p>El objetivo de <b>Button Groups</b> en <b>Bootstrap 5</b> es agrupar múltiples <b>botones relacionados</b> en una sola línea o bloque, manteniendo un diseño uniforme y compacto. Se usan en <b>barras de herramientas, selecciones de opciones o controles de acciones</b>, mejorando la organización y usabilidad.</p>
+    <br>
+  </div>
+
+  <!-- Pie de Página -->
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <img src="../img/icono-silvia.png" alt="icono-silvia" class="rounded-circle"
+        style="width: 40px; height: 40px; object-fit: cover;">
+
+      <div class="text-center">
+        <p class="mb-0">© 2024 <strong>Silvia Aparicio Martín</strong>. Esta obra está bajo una
+          <a href="https://creativecommons.org/licenses/by/4.0/" class="text-white" target="_blank">licencia de Creative
+            Commons Atribución 4.0 Internacional</a>.
+        </p>
+      </div>
+
+      <div class="text-end">
+        <a href="../index.html" class="text-white text-decoration-none">BS5</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+/* Estilos para el encabezado */
+.custom-header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía personalizada */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    background: linear-gradient(125deg, rgba(33, 37, 41, 0.9), rgba(2, 37, 71, 0.8), rgba(33, 37, 41, 0.9)); /* Fondo con gradiente */
+    color: white; /* Color de texto blanco */
+    padding: 10px 0; /* Espaciado superior e inferior */
+  }
+  
+  .custom-header h1 {
+    margin: 0; /* Elimina márgenes por defecto */
+    font-size: 2.5rem; /* Tamaño de fuente grande */
+  }
+  
+  /* Estilos para el ícono de la casa */
+  .icono {
+    width: 30px; /* Establece el tamaño del ícono */
+    margin-left: 10px; /* Añade un margen izquierdo al ícono */
+  }
+  
+  /* Estilos para la barra de navegación */
+  .navbar {
+    margin-bottom: 0; /* Elimina el margen inferior de la barra */
+  }
+  
+  .navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3); /* Color del borde del botón para colapsar el menú */
+  }
+  
+  .navbar-nav {
+    margin-left: auto; /* Alinea los elementos de la lista de navegación a la derecha */
+    margin-right: auto; /* Alinea los elementos de la lista de navegación a la izquierda */
+  }
+  
+  .nav-item {
+    padding: 0 10px; /* Espaciado horizontal para cada ítem de la barra de navegación */
+  }
+  
+  .navbar-dark .nav-link {
+    color: white; /* Color de los enlaces en la barra de navegación */
+  }
+  
+  .navbar-dark .nav-link:hover {
+    color: #f8f9fa; /* Color cuando se pasa el cursor sobre los enlaces */
+  }
+  
+  .navbar-nav .dropdown-menu {
+    background-color: #343a40; /* Fondo oscuro para el menú desplegable */
+  }
+  
+  .navbar-nav .dropdown-item {
+    color: white; /* Color de los elementos en el menú desplegable */
+  }
+  
+  .navbar-nav .dropdown-item:hover {
+    background-color: #495057; /* Fondo gris cuando se pasa el cursor sobre un elemento del menú desplegable */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white; /* Color del ícono de hamburguesa para el menú */
+  }
+  

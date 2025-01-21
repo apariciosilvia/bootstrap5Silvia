@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BS5 UTILITIES</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/encabezado.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/fuentes.css">
+  <link rel="icon" href="../img/icono-silvia.ico" type="image/x-icon">
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: 'Arial', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- Header -->
+    <header>
+      <div class="custom-header">
+        <h1 class="fuente-paginas-titulo">TUTORIAL BS5 UTILITIES</h1>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../img/icono-casa.png" alt="icono-casa"
+              class="icono"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <label class="hamburger">
+              <input type="checkbox">
+              <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom"
+                  d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                </path>
+                <path class="line" d="M7 16 27 16"></path>
+              </svg>
+            </label> </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <!-- Dropdown Básicos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Básicos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="tables.html">BS5 Tables</a></li>
+                  <li><a class="dropdown-item" href="dropdowns.html">BS5 Dropdowns</a></li>
+                  <li><a class="dropdown-item" href="forms.html">BS5 Forms</a></li>
+                  <li><a class="dropdown-item" href="flex.html">BS5 Flex</a></li>
+                  <li><a class="dropdown-item" href="navs.html">BS5 Navs</a></li>
+                  <li><a class="dropdown-item" href="inputGroups.html">BS5 Input Groups</a></li>
+                  <li><a class="dropdown-item" href="jumbotron.html">BS5 Jumbotron</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Botones y Grupos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Botones y Grupos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="badges.html">BS5 Badges</a></li>
+                  <li><a class="dropdown-item" href="buttons.html">BS5 Buttons</a></li>
+                  <li><a class="dropdown-item" href="selectMenus.html">BS5 Select Menus</a></li>
+                  <li><a class="dropdown-item" href="buttonsGroups.html">BS5 Buttons Groups</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Componentes -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Componentes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                  <li><a class="dropdown-item" href="tooltip.html">BS5 Tooltip</a></li>
+                  <li><a class="dropdown-item" href="carousel.html">BS5 Carousel</a></li>
+                  <li><a class="dropdown-item" href="offcanvas.html">BSS OffCanvas</a></li>
+                  <li><a class="dropdown-item" href="progressBars.html">BS5 Progress Bar</a></li>
+                  <li><a class="dropdown-item" href="range.html">BS5 Range</a></li>
+                  <li><a class="dropdown-item" href="images.html">BS5 Images</a></li>
+                  <li><a class="dropdown-item" href="cards.html">BS5 Cards</a></li>
+                  <li><a class="dropdown-item" href="collapse.html">BS5 Collapse</a></li>
+                  <li><a class="dropdown-item" href="toast.html">BS5 Toast</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Estructura -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Estructura
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                  <li><a class="dropdown-item" href="navbar.html">BS5 Nav Bar</a></li>
+                  <li><a class="dropdown-item" href="modal.html">BS5 Modal</a></li>
+                  <li><a class="dropdown-item" href="scrollspy.html">BS5 ScrolSpy</a></li>
+                  <li><a class="dropdown-item" href="listGroups.html">BS5 List Groups</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Avanzados -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Avanzados
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                  <li><a class="dropdown-item" href="darkMode.html">BS5 DarkMode</a></li>
+                  <li><a class="dropdown-item" href="spinners.html">BS5 Spinners</a></li>
+                  <li><a class="dropdown-item" href="alerts.html">BS5 Alerts</a></li>
+                  <li><a class="dropdown-item" href="popover.html">BS5 Popover</a></li>
+                  <li><a class="dropdown-item" href="floatingLabels.html">BS5 Floating Labels</a></li>
+                  <li><a class="dropdown-item" href="checksRadios.html">BS5 Checks and Radios</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Utilidades -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Utilidades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                  <li><a class="dropdown-item" href="utilities.html">BSS Utilities</a></li>
+                  <li><a class="dropdown-item" href="formValidation.html">BS5 Form Validation</a></li>
+                  <li><a class="dropdown-item" href="pagination.html">BS5 Pagination</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <div class="container" id="contenedor">
+    <!-- Utilities Section -->
+    <h2 class="text-secondary mt-5 mb-4">Bootstrap 5 Utilities</h2>
+  
+    <!-- Margins and Padding -->
+    <div class="mb-4 p-3 bg-light border">
+      <h4>Espaciado</h4>
+      <p class="mb-2">Este texto tiene un margen inferior (<code>.mb-2</code>).</p>
+      <p class="p-3 bg-primary text-white">Este texto tiene un relleno (<code>.p-3</code>).</p>
+    </div>
+  
+    <!-- Text Alignment -->
+    <div class="mb-4">
+      <h4>Alineación de Texto</h4>
+      <p class="text-start">Texto alineado a la izquierda (<code>.text-start</code>).</p>
+      <p class="text-center">Texto centrado (<code>.text-center</code>).</p>
+      <p class="text-end">Texto alineado a la derecha (<code>.text-end</code>).</p>
+    </div>
+  
+    <!-- Background Colors -->
+    <div class="mb-4">
+      <h4>Colores de Fondo</h4>
+      <p class="bg-primary text-white p-2">Fondo primario (<code>.bg-primary</code>).</p>
+      <p class="bg-success text-white p-2">Fondo éxito (<code>.bg-success</code>).</p>
+      <p class="bg-warning text-dark p-2">Fondo advertencia (<code>.bg-warning</code>).</p>
+    </div>
+  
+    <!-- Display Utilities -->
+    <div class="mb-4">
+      <h4>Display</h4>
+      <p class="d-none">Este texto está oculto (<code>.d-none</code>).</p>
+      <p class="d-inline">Este texto se muestra en línea (<code>.d-inline</code>).</p>
+      <p class="d-block">Este texto se muestra como bloque (<code>.d-block</code>).</p>
+    </div>
+  
+    <!-- Flex Utilities -->
+    <div class="mb-4 d-flex justify-content-between align-items-center bg-light p-3">
+      <h4>Utilidades Flex</h4>
+      <div class="p-2 bg-primary text-white">Elemento 1</div>
+      <div class="p-2 bg-success text-white">Elemento 2</div>
+      <div class="p-2 bg-warning text-dark">Elemento 3</div>
+    </div>
+  
+    <!-- Visibility -->
+    <div class="mb-4">
+      <h4>Visibilidad</h4>
+      <p class="visible">Este texto es visible (<code>.visible</code>).</p>
+      <p class="invisible">Este texto es invisible pero ocupa espacio (<code>.invisible</code>).</p>
+    </div>
+  
+    <!-- Explicación: Utilities -->
+    <div class="explanation-box mt-4">
+      <div class="explanation-title">¿Qué son las Utilities en Bootstrap 5?</div>
+      <div class="explanation-content">
+        Las utilidades de Bootstrap 5 son clases predefinidas que permiten aplicar estilos rápidamente sin necesidad de CSS adicional. Son útiles para:
+        <ul>
+          <li><strong>Espaciado:</strong> Margen y relleno con clases como <code>.m-3</code> o <code>.p-3</code>.</li>
+          <li><strong>Colores:</strong> Cambiar colores de fondo y texto con clases como <code>.bg-primary</code> o <code>.text-danger</code>.</li>
+          <li><strong>Flex:</strong> Crear diseños flexibles y responsivos con <code>.d-flex</code>, <code>.justify-content-*</code>, etc.</li>
+          <li><strong>Visibilidad:</strong> Controlar la visibilidad de elementos con <code>.visible</code> e <code>.invisible</code>.</li>
+        </ul>
+      </div>
+    </div>
+    <br><br>
+      <h3>OBJETIVO DEL ELEMENTO:</h3>
+      <p>El objetivo de <b>Utilities</b> en <b>Bootstrap 5</b> es proporcionar <b>clases auxiliares</b> para aplicar rápidamente estilos como <b>márgenes, padding, colores, alineaciones y visibilidad</b>, sin necesidad de CSS personalizado. Se usan para <b>ajustes rápidos y responsivos</b>, optimizando el diseño y la productividad.</p>
+  </div>
+  <!-- Pie de Página -->
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <img src="../img/icono-silvia.png" alt="icono-silvia" class="rounded-circle"
+        style="width: 40px; height: 40px; object-fit: cover;">
+
+      <div class="text-center">
+        <p class="mb-0">© 2024 <strong>Silvia Aparicio Martín</strong>. Esta obra está bajo una
+          <a href="https://creativecommons.org/licenses/by/4.0/" class="text-white" target="_blank">licencia de Creative
+            Commons Atribución 4.0 Internacional</a>.
+        </p>
+      </div>
+
+      <div class="text-end">
+        <a href="../index.html" class="text-white text-decoration-none">BS5</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

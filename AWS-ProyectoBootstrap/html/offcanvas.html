@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BS5 OFFCANVAS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/encabezado.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/fuentes.css">
+  <link rel="icon" href="../img/icono-silvia.ico" type="image/x-icon">
+  <style>
+    body {
+      background: #b9e5f0;
+      font-family: 'Arial', sans-serif;
+      color: #111852;
+    }
+
+    .offcanvas-header {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .offcanvas-body {
+      background-color: #f8f9fa;
+    }
+
+    .explanation h2 {
+      font-weight: bold;
+    }
+
+    .explanation ul {
+      font-size: 1.1rem;
+    }
+
+    .explanation ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- Header -->
+    <header>
+      <div class="custom-header">
+        <h1 class="fuente-paginas-titulo">TUTORIAL BS5 OFFCANVAS</h1>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../img/icono-casa.png" alt="icono-casa"
+              class="icono"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <label class="hamburger">
+              <input type="checkbox">
+              <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom"
+                  d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                </path>
+                <path class="line" d="M7 16 27 16"></path>
+              </svg>
+            </label> </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <!-- Dropdown Básicos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Básicos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="tables.html">BS5 Tables</a></li>
+                  <li><a class="dropdown-item" href="dropdowns.html">BS5 Dropdowns</a></li>
+                  <li><a class="dropdown-item" href="forms.html">BS5 Forms</a></li>
+                  <li><a class="dropdown-item" href="flex.html">BS5 Flex</a></li>
+                  <li><a class="dropdown-item" href="navs.html">BS5 Navs</a></li>
+                  <li><a class="dropdown-item" href="inputGroups.html">BS5 Input Groups</a></li>
+                  <li><a class="dropdown-item" href="jumbotron.html">BS5 Jumbotron</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Botones y Grupos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Botones y Grupos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="badges.html">BS5 Badges</a></li>
+                  <li><a class="dropdown-item" href="buttons.html">BS5 Buttons</a></li>
+                  <li><a class="dropdown-item" href="selectMenus.html">BS5 Select Menus</a></li>
+                  <li><a class="dropdown-item" href="buttonsGroups.html">BS5 Buttons Groups</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Componentes -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Componentes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                  <li><a class="dropdown-item" href="tooltip.html">BS5 Tooltip</a></li>
+                  <li><a class="dropdown-item" href="carousel.html">BS5 Carousel</a></li>
+                  <li><a class="dropdown-item" href="offcanvas.html">BSS OffCanvas</a></li>
+                  <li><a class="dropdown-item" href="progressBars.html">BS5 Progress Bar</a></li>
+                  <li><a class="dropdown-item" href="range.html">BS5 Range</a></li>
+                  <li><a class="dropdown-item" href="images.html">BS5 Images</a></li>
+                  <li><a class="dropdown-item" href="cards.html">BS5 Cards</a></li>
+                  <li><a class="dropdown-item" href="collapse.html">BS5 Collapse</a></li>
+                  <li><a class="dropdown-item" href="toast.html">BS5 Toast</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Estructura -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Estructura
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                  <li><a class="dropdown-item" href="navbar.html">BS5 Nav Bar</a></li>
+                  <li><a class="dropdown-item" href="modal.html">BS5 Modal</a></li>
+                  <li><a class="dropdown-item" href="scrollspy.html">BS5 ScrolSpy</a></li>
+                  <li><a class="dropdown-item" href="listGroups.html">BS5 List Groups</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Avanzados -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Avanzados
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                  <li><a class="dropdown-item" href="darkMode.html">BS5 DarkMode</a></li>
+                  <li><a class="dropdown-item" href="spinners.html">BS5 Spinners</a></li>
+                  <li><a class="dropdown-item" href="alerts.html">BS5 Alerts</a></li>
+                  <li><a class="dropdown-item" href="popover.html">BS5 Popover</a></li>
+                  <li><a class="dropdown-item" href="floatingLabels.html">BS5 Floating Labels</a></li>
+                  <li><a class="dropdown-item" href="checksRadios.html">BS5 Checks and Radios</a></li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Utilidades -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Utilidades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                  <li><a class="dropdown-item" href="utilities.html">BSS Utilities</a></li>
+                  <li><a class="dropdown-item" href="formValidation.html">BS5 Form Validation</a></li>
+                  <li><a class="dropdown-item" href="pagination.html">BS5 Pagination</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <div class="container mt-5">
+    <!-- Explicación del Offcanvas -->
+    <div class="explanation mb-4">
+      <h2>¿Qué es el Offcanvas de Bootstrap 5?</h2>
+      <p>El componente <strong>Offcanvas</strong> de Bootstrap 5 permite crear un panel deslizante desde cualquier
+        dirección (izquierda, derecha, arriba, abajo) que se puede abrir y cerrar, ofreciendo una interfaz limpia y
+        moderna para mostrar contenido adicional sin ocupar espacio permanente en la página.</p>
+      <p>Es perfecto para menús de navegación, formularios, alertas, o cualquier otro contenido que desees mostrar de
+        manera temporal.</p>
+
+      <!-- Opciones del Offcanvas -->
+      <h3>Opciones del Offcanvas en Bootstrap 5</h3>
+      <ul>
+        <li><strong>Placement:</strong> Especifica desde dónde se desliza el offcanvas. Las opciones son:
+          <ul>
+            <li><code>start</code>: Desde la izquierda (por defecto en idiomas de lectura de izquierda a derecha)</li>
+            <li><code>end</code>: Desde la derecha</li>
+            <li><code>top</code>: Desde la parte superior</li>
+            <li><code>bottom</code>: Desde la parte inferior</li>
+          </ul>
+        </li>
+        <li><strong>Backdrop:</strong> Controla si el offcanvas debe tener un fondo semitransparente detrás de él. Se
+          puede activar o desactivar.</li>
+        <li><strong>Scroll:</strong> Se puede hacer que el offcanvas tenga un comportamiento de desplazamiento si el
+          contenido es largo.</li>
+        <li><strong>Animation:</strong> El offcanvas viene con animaciones predeterminadas cuando se abre o cierra.
+        </li>
+        <li><strong>Close Button:</strong> Se incluye un botón para cerrar el offcanvas o también se puede cerrar
+          haciendo clic fuera de él (si se activa la opción de backdrop).</li>
+      </ul>
+    </div>
+
+    <!-- Ejemplo de Offcanvas -->
+    <h1 class="text-center mb-4">Ejemplo de Offcanvas en Bootstrap 5</h1>
+    <p class="text-center">Haz clic en el botón para ver el efecto Offcanvas.</p>
+
+    <!-- Botón para abrir el Offcanvas -->
+    <div class="text-center">
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">Abrir Offcanvas</button>
+    </div>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Panel Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <h5>Contenido del Offcanvas</h5>
+        <p>Aquí puedes poner cualquier contenido. El offcanvas es perfecto para mostrar información adicional de forma
+          accesible, sin ocupar espacio permanente.</p>
+        <p>Ejemplo: Menú lateral, alertas, formularios rápidos, etc.</p>
+        <p>Este es un ejemplo básico, pero puedes personalizarlo según tus necesidades.</p>
+        <i style="color: red;">AUTOR: Silvia Aparicio Martín</i>
+      </div>
+    </div>
+
+    <!-- Más Información -->
+    <div class="info-section mt-5">
+      <h3>¿Cómo Implementar Offcanvas en Bootstrap 5?</h3>
+      <ol>
+        <li>Asegúrate de incluir el archivo CSS y JS de Bootstrap 5 en tu proyecto.</li>
+        <li>Usa el componente <code>&lt;div class="offcanvas"&gt;</code> para crear el offcanvas. Debe incluir un
+          <code>id</code> único.
+        </li>
+        <li>Usa el atributo <code>data-bs-toggle="offcanvas"</code> en un botón o enlace para activar el offcanvas.
+        </li>
+        <li>Para personalizar la dirección desde donde se desliza el offcanvas, usa el atributo
+          <code>class="offcanvas-start"</code>, <code>offcanvas-end</code>, <code>offcanvas-top</code> o
+          <code>offcanvas-bottom</code>.
+        </li>
+        <li>Si quieres que el offcanvas se cierre automáticamente cuando se hace clic fuera de él, activa la opción de
+          <code>backdrop</code>.
+        </li>
+        <li>El contenido del offcanvas se puede desplazar si es más grande que la pantalla, habilitando el
+          desplazamiento vertical.</li>
+      </ol>
+      <p>El componente offcanvas es una excelente opción para crear interfaces interactivas sin sobrecargar la página.
+        Es ampliamente utilizado para menús, filtros de búsqueda y paneles de control.</p>
+    </div>
+    <br>
+    <h3>OBJETIVO DEL ELEMENTO:</h3>
+    <p>El objetivo de <b>Offcanvas</b> en <b>Bootstrap 5</b> es proporcionar un <b>panel lateral oculto</b> que se desliza dentro de la pantalla cuando es activado. Se usa para <b>menús de navegación, filtros o información adicional</b>, optimizando el espacio y la experiencia en dispositivos móviles.</p>
+  </div>
+
+  <!-- Pie de Página -->
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <img src="../img/icono-silvia.png" alt="icono-silvia" class="rounded-circle"
+        style="width: 40px; height: 40px; object-fit: cover;">
+
+      <div class="text-center">
+        <p class="mb-0">© 2024 <strong>Silvia Aparicio Martín</strong>. Esta obra está bajo una
+          <a href="https://creativecommons.org/licenses/by/4.0/" class="text-white" target="_blank">licencia de
+            Creative
+            Commons Atribución 4.0 Internacional</a>.
+        </p>
+      </div>
+
+      <div class="text-end">
+        <a href="../index.html" class="text-white text-decoration-none">BS5</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
